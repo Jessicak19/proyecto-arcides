@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hacer Pedido - Hello Kitty Store</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/custom.css">
+  <style>
+    body {
+      background-color: #ffe6f2;
+      color: #d63384;
+    }
+    .navbar {
+      background-color: #ff99cc !important;
+    }
+    .btn-primary {
+      background-color: #ff66b2;
+      border-color: #ff66b2;
+    }
+    .table-td{
+      background-color:#ff66b2 ;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <a class="navbar-brand" href="helloKitty.html">
+      <img src="kiti.png" alt="Logo" width="30" height="30"> Hello Kitty Store
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </nav>
+
+  <div class="container mt-4">
+    <h1>Realizar Pedido</h1>
+    <form id="pedidoForm">
+      <div class="mb-3">
+        <label for="nombre" class="form-label">Nombre Completo</label>
+        <input type="text" class="form-control" id="nombre" placeholder="Jessica Hernandez" required>
+      </div>
+      <div class="mb-3">
+        <label for="direccion" class="form-label">Dirección</label>
+        <input type="text" class="form-control" id="direccion" placeholder="Urb. Nuevo Lourdes, Col... Hernandez" required>
+      </div>
+      <div class="mb-3">
+        <label for="producto" class="form-label">Producto</label>
+        <input type="text" class="form-control" id="producto" placeholder="Peluche de Hello K..." required>
+      </div>
+      <div class="mb-3">
+        <label for="cantidad" class="form-label">Cantidad</label>
+        <input type="number" class="form-control" id="cantidad" placeholder="0" required>
+      </div>
+      <button type="submit" class="btn btn-primary">Comprar</button>
+    </form>
+  </div>
+
+  <footer class="text-center p-3 mt-4">
+    <p>&copy; 2025 Hello Kitty Store</p>
+  </footer>
+  <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

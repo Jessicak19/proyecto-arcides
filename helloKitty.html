@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hello Kitty Store</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="custom.css">
+  <style>
+    body {
+      background-color: #ffe6f2;
+      color: #d63384;
+    }
+    .navbar {
+      background-color: #ff99cc !important;
+    }
+    .btn-primary {
+      background-color: #ff66b2;
+      border-color: #ff66b2;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <a class="navbar-brand" href="helloKitty.html">
+      <img src="kiti.png" alt="Logo" width="30" height="30"> Hello Kitty Store
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="#productos">Productos</a></li>
+        <li class="nav-item"><a class="nav-link" href="#galeria">Galería</a></li>
+        <li class="nav-item"><a class="nav-link" href="pedido.html">Hacer Pedido</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Más
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#">Joyeria</a></li>
+            <li><a class="dropdown-item" href="#">Comunidad</a></li>
+            <li><a class="dropdown-item" href="#">Contacto</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container mt-4 text-center">
+    <h1>Bienvenidos a Hello Kitty Store</h1>
+    <p>Descubre nuestra colección de productos adorables de Hello Kitty.</p>
+    <a href="#productos" class="btn btn-primary">Ver Productos</a>
+  </div>
+
+  <div class="container mt-4">
+    <h2>Nuestros Productos</h2>
+    <table class="table table-striped table-bordered" id="productos">
+      <thead>
+        <tr>
+          <th>Producto</th>
+          <th>Descripción</th>
+          <th>Precio</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Peluches</td>
+          <td>Peluche suave de Hello Kitty</td>
+          <td>$20 <br><button class="btn btn-primary">Comprar</button></td>
+        </tr>
+        <tr>
+          <td>Mochilas</td>
+          <td>Mochila rosa con diseño de Hello Kitty</td>
+          <td>$35 <br><button class="btn btn-primary">Comprar</button></td>
+        </tr>
+        <tr>
+          <td>Botella</td>
+          <td>Botella para bebidas con diseño de Hello Kitty</td>
+          <td>$8 <br><button class="btn btn-primary">Comprar</button></td>
+        </tr>
+        <tr>
+          <td>Fundas para telefonos</td>
+          <td>Fundas con diseños de Hello Kitty y Kuromi</td>
+          <td>$12 <br><button class="btn btn-primary">Comprar</button></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="container mt-4">
+    <h2 id="galeria">Galería</h2>
+    <div id="helloKittyCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="kiti1.png" class="d-block w-100" alt="Hello Kitty 1">
+        </div>
+        <div class="carousel-item">
+          <img src="kiti2.png" class="d-block w-100" alt="Hello Kitty 2">
+        </div>
+        <div class="carousel-item">
+          <img src="kiti3.png" class="d-block w-100" alt="Hello Kitty 3">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#helloKittyCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#helloKittyCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+
+  <footer class="text-center p-3 mt-4">
+    <p>&copy; 2025 Hello Kitty Store</p>
+  </footer>
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
